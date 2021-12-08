@@ -1,0 +1,165 @@
+/* 
+Default style
+*/
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s;
+  overflow: hidden;
+}
+.site-main{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px dashed #fff;
+}
+.weather-degre{
+  color: #fff;
+  font-size: 80px;
+  font-weight: 600;
+  transition: .4s ease;
+}
+.some-main-els{
+  margin-left: 10px;
+}
+.country-name{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.now-date{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.weather-info{
+  color: #fff;
+}
+.menu-btn{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+.menu-btn button{
+  font-size: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  z-index: 99;
+}
+/* 
+Right Elements
+*/
+
+.right-els{
+  min-height: 100vh;
+  width: 400px;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: .4s ease;
+  padding: 30px 40px;
+}
+.times-btn{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+.active-menu{
+  right: 0;
+}
+.search-input{
+  display: flex;
+  align-items: center;
+}
+.search-input input{
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 2px solid #666;
+  font-size: 18px;
+}
+.search-input button{
+  padding: 5px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+.countries-list{
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow: auto;
+  /* width: 100%; */
+}
+.countries-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.countries-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+.countries-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.countries-list li{
+  margin: 10px 0;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+}
+hr{
+  background-color: #555;
+  border: none;
+  height: 2px;
+  margin: 30px 0;
+}
+.other-details h3{
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+}
+.other-details div{
+  color: rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}

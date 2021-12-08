@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App || Umidjon Ibrokhimov</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body style="background-image: url(../assets/img/bg4.jpg);">
+
+  <div class="container">
+    <main class="site-main">
+      <span class="weather-degre">15°</span>
+      <div class="some-main-els">
+          <div class="country-name">
+            London
+          </div>
+          <div class="now-date">
+            20:04 - Tuesday, 7 December 2021
+          </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="menu-btn">
+    <button id="menuBtn">
+      <i class="fas fa-bars" id="icon"></i>
+    </button>
+  </div>
+  
+  <div class="right-els" id="menu">
+    <button class="times-btn" id="closeBtn"> 
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="search-input">
+      <input type="text" id="search-input-only" placeholder="Country name..." autocomplete="address-level1">
+      <button id="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    
+    <hr>
+    <div class="other-details">
+      <h3>Weather Details</h3>
+      <div class="cloudly">
+        Cloudly
+        <span class="cloudly-prs">86%</span>
+      </div>
+      <div class="himidity">
+        Humidity
+        <span class="humidity-prs">62%</span>
+      </div>
+      <div class="wind">
+        Wind
+        <span class="wind-prs">8km/h</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
+<!-- ° -->
