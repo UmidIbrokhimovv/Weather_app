@@ -1,4 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
+setTimeout(() => {
+
+  let loader = document.querySelector('.loader');
+  loader.style.display = 'none';
 
   let body = document.body
 
@@ -97,5 +100,4 @@ function getNowDate() {
 }
 setInterval(() => getNowDate(), 1)
 
-
-})
+}, 5000)
