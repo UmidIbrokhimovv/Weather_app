@@ -1,4 +1,6 @@
-let body = document.body
+window.addEventListener('DOMContentLoaded', () => {
+
+  let body = document.body
 
 let ind = 0
 
@@ -94,3 +96,6 @@ function getNowDate() {
   date.textContent = hr + ':' + min + ':' + sec + ' - ' + nowDay + ', ' + nowDayOnMonth + ' ' + nowMonth + ' ' + nowDate.getFullYear()
 }
 setInterval(() => getNowDate(), 1)
+
+
+})
